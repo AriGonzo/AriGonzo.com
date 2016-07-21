@@ -20,7 +20,7 @@ angular
 
 		$scope.navClass = function (page) {
 			console.log($location.path().substring(1))
-        var currentRoute = $location.path().substring(1) || 'home';
+        var currentRoute = $location.path().substring(1);
         return page === currentRoute ? 'active' : '';
     };
 	}])

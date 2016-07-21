@@ -3,9 +3,14 @@ angular
 		'ui.router'
 		])
 	.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
-		$urlRouterProvider.otherwise('/home');
+		$urlRouterProvider.otherwise('/');
 
 		$stateProvider
+			.state('landing', {
+				url: '/',
+				templateUrl: 'templates/landing.html',
+				controller: 'landingCtrl'
+			})
 			.state('home', {
 				url: '/home',
 				templateUrl: 'templates/home.html',

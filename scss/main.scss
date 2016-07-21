@@ -1,9 +1,10 @@
 $lightGrey: #D1D1D1;
 $purple: #602080;
 $teal: #008080;
+$bluerTeal: #1C6480;
 
 body {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Alegreya Sans', sans-serif;
 	background-color: $lightGrey;
 	color: $purple;
 }
@@ -17,11 +18,11 @@ ul li {
 	background-color: $purple;
 
 	#brandLogo {
-		width: 55px;
+		width: 48px;
 	}
 	
 	.sidebarList {
-		font-size: 23pt;
+		font-size: 20pt;
 		margin: 0;
 		padding-left: 0;
 
@@ -29,6 +30,7 @@ ul li {
 			line-height: 2;
 			display: inline-block;
 			cursor: pointer;
+			text-transform: uppercase;
 
 			&.active {
 				background-color: $teal;
@@ -45,5 +47,30 @@ ul li {
 			}
 		}
 	}
+}
 
+#landingContainer {
+	height: 95vh;
+	background-color: $bluerTeal;
+}
+
+#aboutViewContainer {
+	#leftPanel {
+		background-color: $bluerTeal;
+		height: 95vh;
+		box-shadow: black 1px 1px 10px;
+	}
+
+	#rightPanel {
+
+		#aboutImgContainer{
+			margin-top: 2%;
+
+			img {
+				width: 100%;
+	    	margin: auto;
+	    	display: block;
+			}
+		}
+	}
 }

@@ -1,4 +1,4 @@
 <ul class="sidebarList row">
-	<li class="col-md-1"><img class="center-block" id="brandLogo" src="assets/images/AriGonzologo.png" alt="logo"></li>
+	<li class="col-md-1" ui-sref="landing"><img class="center-block" id="brandLogo" src="assets/images/AriGonzologo.png" alt="logo"></li>
 	<li class="text-center col-md-2" ng-class="navClass('{{link.sref}}')" ng-repeat="link in links"><a ui-sref="{{link.sref}}">{{link.title}}</a></li>
 </ul>

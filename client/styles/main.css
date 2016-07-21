@@ -1,5 +1,5 @@
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   background-color: #D1D1D1;
   color: #602080; }
 
@@ -10,15 +10,16 @@ ul li {
   color: #D1D1D1;
   background-color: #602080; }
   #sidebar #brandLogo {
-    width: 55px; }
+    width: 48px; }
   #sidebar .sidebarList {
-    font-size: 23pt;
+    font-size: 20pt;
     margin: 0;
     padding-left: 0; }
     #sidebar .sidebarList li {
       line-height: 2;
       display: inline-block;
-      cursor: pointer; }
+      cursor: pointer;
+      text-transform: uppercase; }
       #sidebar .sidebarList li.active {
         background-color: #008080; }
       #sidebar .sidebarList li:hover {
@@ -27,3 +28,19 @@ ul li {
         color: #D1D1D1;
         text-decoration: none;
         padding: 17px 50px; }
+
+#landingContainer {
+  height: 95vh;
+  background-color: #1C6480; }
+
+#aboutViewContainer #leftPanel {
+  background-color: #1C6480;
+  height: 95vh;
+  box-shadow: black 1px 1px 10px; }
+
+#aboutViewContainer #rightPanel #aboutImgContainer {
+  margin-top: 2%; }
+  #aboutViewContainer #rightPanel #aboutImgContainer img {
+    width: 100%;
+    margin: auto;
+    display: block; }
