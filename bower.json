@@ -1,0 +1,23 @@
+{
+  "name": "redesignedPortfolio",
+  "version": "0.0.0",
+  "authors": [
+    "Ariel Gonzalez <AriGonzalez515@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ]
+}

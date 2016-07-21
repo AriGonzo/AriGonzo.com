@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ari Gonzalez</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+
+
+
+		<div class="container" ng-app="arigonzo">
+			<div class="row">
+				<aside id="sidebar" class="col-md-4" ng-include="'templates/sidebar.html'"></aside>
+				<div class="col-md-8" ui-view></div>
+				<header class="col-md-12" ng-include="'templates/footer.html'"></header>
+			</div>
+		</div>
+
+
+		<!--Libraries and Dependencies -->
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+		<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+		<!--My Angular JS Files -->
+		<script type="text/javascript" src="scripts/app.js"></script>
+		<script type="text/javascript" src="scripts/controllers/homeCtrl.js"></script>
+	</body>
+</html>
