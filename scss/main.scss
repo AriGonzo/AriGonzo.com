@@ -1,0 +1,49 @@
+$lightGrey: #D1D1D1;
+$purple: #602080;
+$teal: #008080;
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	background-color: $lightGrey;
+	color: $purple;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+#sidebar {
+	color: $lightGrey;
+	background-color: $purple;
+
+	#brandLogo {
+		width: 55px;
+	}
+	
+	.sidebarList {
+		font-size: 23pt;
+		margin: 0;
+		padding-left: 0;
+
+		li {
+			line-height: 2;
+			display: inline-block;
+			cursor: pointer;
+
+			&.active {
+				background-color: $teal;
+			}
+
+			&:hover {
+				background-color: $teal;
+			}
+
+			a {
+				color: $lightGrey;
+				text-decoration: none;
+				padding: 17px 50px;
+			}
+		}
+	}
+
+}

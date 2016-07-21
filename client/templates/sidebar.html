@@ -1,5 +1,4 @@
-<h1>About</h1>
-<h1>Projects</h1>
-<h1>Work</h1>
-<h1>Resume</h1>
-<h1>Contact</h1>
+<ul class="sidebarList row">
+	<li class="col-md-1"><img class="center-block" id="brandLogo" src="assets/images/AriGonzologo.png" alt="logo"></li>
+	<li class="text-center col-md-2" ng-class="navClass('{{link.sref}}')" ng-repeat="link in links"><a ui-sref="{{link.sref}}">{{link.title}}</a></li>
+</ul>

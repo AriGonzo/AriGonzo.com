@@ -1,8 +1,29 @@
 body {
-	background-color: #eee;
-}
+  font-family: 'Work Sans', sans-serif;
+  background-color: #D1D1D1;
+  color: #602080; }
+
+ul li {
+  list-style-type: none; }
 
 #sidebar {
-	height: 100vh;
-	background-color: grey;
-}
+  color: #D1D1D1;
+  background-color: #602080; }
+  #sidebar #brandLogo {
+    width: 55px; }
+  #sidebar .sidebarList {
+    font-size: 23pt;
+    margin: 0;
+    padding-left: 0; }
+    #sidebar .sidebarList li {
+      line-height: 2;
+      display: inline-block;
+      cursor: pointer; }
+      #sidebar .sidebarList li.active {
+        background-color: #008080; }
+      #sidebar .sidebarList li:hover {
+        background-color: #008080; }
+      #sidebar .sidebarList li a {
+        color: #D1D1D1;
+        text-decoration: none;
+        padding: 17px 50px; }

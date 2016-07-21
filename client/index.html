@@ -6,17 +6,17 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 		<link rel="stylesheet" href="styles/main.css">
 	</head>
 	<body>
 
 
 
-		<div class="container" ng-app="arigonzo">
+		<div class="container-fluid" ng-app="arigonzo">
 			<div class="row">
-				<aside id="sidebar" class="col-md-4" ng-include="'templates/sidebar.html'"></aside>
-				<div class="col-md-8" ui-view></div>
-				<header class="col-md-12" ng-include="'templates/footer.html'"></header>
+				<header id="sidebar" class="col-md-12" ng-controller="headerCtrl" ng-include="'templates/sidebar.html'"></header>
+				<div class="col-md-12" ui-view></div>
 			</div>
 		</div>
 
@@ -29,5 +29,10 @@
 		<!--My Angular JS Files -->
 		<script type="text/javascript" src="scripts/app.js"></script>
 		<script type="text/javascript" src="scripts/controllers/homeCtrl.js"></script>
+		<script type="text/javascript" src="scripts/controllers/headerCtrl.js"></script>
+		<script type="text/javascript" src="scripts/controllers/skillsCtrl.js"></script>
+		<script type="text/javascript" src="scripts/controllers/workCtrl.js"></script>
+		<script type="text/javascript" src="scripts/controllers/labCtrl.js"></script>
+		<script type="text/javascript" src="scripts/controllers/contactCtrl.js"></script>
 	</body>
 </html>
