@@ -1,7 +1,13 @@
+/* Variables */
+
 $lightGrey: #D1D1D1;
 $purple: #602080;
 $teal: #008080;
 $bluerTeal: #1C6480;
+
+/* Variables End */
+
+/* Global */
 
 body {
 	font-family: 'Alegreya Sans', sans-serif;
@@ -13,7 +19,18 @@ ul li {
 	list-style-type: none;
 }
 
-#sidebar {
+.purpleText {
+	color: $purple;
+}
+
+.lightText {
+	color:  $lightGrey;
+}
+/* Global End*/
+
+/* Header */
+
+#header {
 	color: $lightGrey;
 	background-color: $purple;
 
@@ -21,7 +38,7 @@ ul li {
 		width: 48px;
 	}
 	
-	.sidebarList {
+	.headerList {
 		font-size: 20pt;
 		margin: 0;
 		padding-left: 0;
@@ -48,35 +65,23 @@ ul li {
 		}
 	}
 }
+/* Header End*/
+
+/* Footer */
+
+#footer {
+	color: $lightGrey;
+	background-color: $purple;
+	height: 55px	
+}
+
+/* Footer End*/
+
+/* Landing Page */
 
 #landingContainer {
 	height: 95vh;
 	background-color: $bluerTeal;
-}
-
-#aboutViewContainer {
-	#leftPanel {
-		background-color: $bluerTeal;
-		height: 95vh;
-		box-shadow: black 1px 6px 10px;
-	}
-
-	#rightPanel {
-
-		#aboutImgContainer{
-			margin-top: 2%;
-
-			img {
-				width: 100%;
-	    	margin: auto;
-	    	display: block;
-			}
-		}
-	}
-}
-
-.lightText {
-	color: $purple;
 }
 
 #landingTextContainer {
@@ -99,7 +104,7 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
+    background: url(assets/images/bgfallback.jpg) no-repeat;
     background-size: cover; 
 }
 
@@ -117,3 +122,62 @@ video#bgvid {
 	font-family: 'Josefin Sans', sans-serif;
 	text-transform: uppercase;
 }
+/* Landing Page End */
+
+/* About Page */
+
+#aboutViewContainer {
+	#leftPanel {
+		background-color: $bluerTeal;
+		height: 87vh;
+		box-shadow: black 1px 6px 10px;
+
+		.aboutPageList {
+			margin-top: 5ex;
+			padding-left: 0;
+			li {
+				font-size: 17pt;
+
+				span {
+					margin-left: 20px;
+				}
+
+			}
+		}
+	}
+
+	#rightPanel {
+		#aboutImgContainer{
+			margin-top: 2%;
+
+			img {
+				width: 100%;
+	    	margin: auto;
+	    	display: block;
+			}
+		}
+	}
+}
+
+/* About Page End */
+
+/* Transitions */
+
+main {
+    /* start 'enter' transition */
+    &.ng-enter {
+        /* transition on enter for .5s */
+        transition: .5s;
+ 
+        /* start with opacity 0 (invisible) */
+        opacity: 0;
+    }
+ 
+    /* end 'enter' transition */
+    &.ng-enter-active {
+        /* end with opacity 1 (fade in) */
+        opacity: 1;
+    }
+}
+
+/* Transitions End */

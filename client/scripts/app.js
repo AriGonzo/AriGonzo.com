@@ -1,6 +1,7 @@
 angular
 	.module('arigonzo', [
-		'ui.router'
+		'ui.router',
+		'ngAnimate'
 		])
 	.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
 		$urlRouterProvider.otherwise('/');

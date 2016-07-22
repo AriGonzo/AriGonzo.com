@@ -16,8 +16,9 @@
 
 		<div class="container-fluid" ng-app="arigonzo">
 			<div class="row">
-				<header id="sidebar" class="col-md-12" ng-controller="headerCtrl" ng-include="'templates/sidebar.html'"></header>
-				<div class="col-md-12" ui-view></div>
+				<header id="header" class="col-md-12" ng-controller="headerCtrl" ng-include="'templates/header.html'"></header>
+				<main class="col-md-12" ui-view></main>
+				<footer id="footer" class="col-md-12" ng-include="'templates/footer.html'"></footer>
 			</div>
 		</div>
 
@@ -26,6 +27,7 @@
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
 		<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
 
 		<!--My Angular JS Files -->
 		<script type="text/javascript" src="scripts/app.js"></script>

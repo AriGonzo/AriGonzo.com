@@ -1,3 +1,6 @@
+/* Variables */
+/* Variables End */
+/* Global */
 body {
   font-family: 'Alegreya Sans', sans-serif;
   background-color: #D1D1D1;
@@ -6,47 +9,49 @@ body {
 ul li {
   list-style-type: none; }
 
-#sidebar {
+.purpleText {
+  color: #602080; }
+
+.lightText {
+  color: #D1D1D1; }
+
+/* Global End*/
+/* Header */
+#header {
   color: #D1D1D1;
   background-color: #602080; }
-  #sidebar #brandLogo {
+  #header #brandLogo {
     width: 48px; }
-  #sidebar .sidebarList {
+  #header .headerList {
     font-size: 20pt;
     margin: 0;
     padding-left: 0; }
-    #sidebar .sidebarList li {
+    #header .headerList li {
       line-height: 2;
       display: inline-block;
       cursor: pointer;
       text-transform: uppercase; }
-      #sidebar .sidebarList li.active {
+      #header .headerList li.active {
         background-color: #008080; }
-      #sidebar .sidebarList li:hover {
+      #header .headerList li:hover {
         background-color: #008080; }
-      #sidebar .sidebarList li a {
+      #header .headerList li a {
         color: #D1D1D1;
         text-decoration: none;
         padding: 17px 50px; }
 
+/* Header End*/
+/* Footer */
+#footer {
+  color: #D1D1D1;
+  background-color: #602080;
+  height: 55px; }
+
+/* Footer End*/
+/* Landing Page */
 #landingContainer {
   height: 95vh;
   background-color: #1C6480; }
-
-#aboutViewContainer #leftPanel {
-  background-color: #1C6480;
-  height: 95vh;
-  box-shadow: black 1px 6px 10px; }
-
-#aboutViewContainer #rightPanel #aboutImgContainer {
-  margin-top: 2%; }
-  #aboutViewContainer #rightPanel #aboutImgContainer img {
-    width: 100%;
-    margin: auto;
-    display: block; }
-
-.lightText {
-  color: #602080; }
 
 #landingTextContainer {
   position: absolute;
@@ -67,7 +72,7 @@ video#bgvid {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(polina.jpg) no-repeat;
+  background: url(assets/images/bgfallback.jpg) no-repeat;
   background-size: cover; }
 
 #landingBtn {
@@ -81,3 +86,40 @@ video#bgvid {
 .landingH2 {
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase; }
+
+/* Landing Page End */
+/* About Page */
+#aboutViewContainer #leftPanel {
+  background-color: #1C6480;
+  height: 87vh;
+  box-shadow: black 1px 6px 10px; }
+  #aboutViewContainer #leftPanel .aboutPageList {
+    margin-top: 5ex;
+    padding-left: 0; }
+    #aboutViewContainer #leftPanel .aboutPageList li {
+      font-size: 17pt; }
+      #aboutViewContainer #leftPanel .aboutPageList li span {
+        margin-left: 20px; }
+
+#aboutViewContainer #rightPanel #aboutImgContainer {
+  margin-top: 2%; }
+  #aboutViewContainer #rightPanel #aboutImgContainer img {
+    width: 100%;
+    margin: auto;
+    display: block; }
+
+/* About Page End */
+/* Transitions */
+main {
+  /* start 'enter' transition */
+  /* end 'enter' transition */ }
+  main.ng-enter {
+    /* transition on enter for .5s */
+    transition: .5s;
+    /* start with opacity 0 (invisible) */
+    opacity: 0; }
+  main.ng-enter-active {
+    /* end with opacity 1 (fade in) */
+    opacity: 1; }
+
+/* Transitions End */

@@ -1,5 +1,11 @@
 <div class="row" id="aboutViewContainer">
-	<div class="col-md-4" id="leftPanel"></div>
+	<div class="col-md-4 lightText" id="leftPanel">
+		<h1><b><u>{{title}}</u></b></h1>
+		<ul class="aboutPageList">
+			<li ng-repeat="fact in facts"><img width="40px" src="/assets/images/{{fact.icon}}" /><span>{{fact.text}}</span><br>
+			<br></li>
+		</ul>
+	</div>
 	<div class="col-md-8" id="rightPanel">
 		<div id="aboutImgContainer">
 			<img src="/assets/images/pic08.jpg" />
