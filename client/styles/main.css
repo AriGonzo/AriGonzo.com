@@ -36,7 +36,7 @@ ul li {
 #aboutViewContainer #leftPanel {
   background-color: #1C6480;
   height: 95vh;
-  box-shadow: black 1px 1px 10px; }
+  box-shadow: black 1px 6px 10px; }
 
 #aboutViewContainer #rightPanel #aboutImgContainer {
   margin-top: 2%; }
@@ -44,3 +44,40 @@ ul li {
     width: 100%;
     margin: auto;
     display: block; }
+
+.lightText {
+  color: #602080; }
+
+#landingTextContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover; }
+
+#landingBtn {
+  color: #eee;
+  background-color: #602080; }
+
+.landingHeader {
+  font-family: 'Amatic SC', cursive;
+  font-size: 10em; }
+
+.landingH2 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase; }
